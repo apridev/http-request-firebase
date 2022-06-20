@@ -15,7 +15,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  // !Mengambil dependensi Provider
+  // !Mengambil data dari provider
   bool isInit = true;
   @override
   void didChangeDependencies() {
@@ -78,7 +78,7 @@ class _HomePageState extends State<HomePage> {
                         Navigator.pushNamed(context, AddPlayer.routeName);
                       },
                       child: const Text(
-                        "Tambah data",
+                        "Tambah Data",
                         style: TextStyle(fontSize: 16),
                       ))
                 ],
