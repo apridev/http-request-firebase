@@ -41,14 +41,14 @@ class AddPlayer extends StatelessWidget {
             TextFormField(
               autocorrect: false,
               autofocus: true,
-              decoration: InputDecoration(labelText: "Nama"),
+              decoration: InputDecoration(labelText: "Nama Lengkap"),
               textInputAction: TextInputAction.next,
               controller: nameController,
             ),
             TextFormField(
               autocorrect: false,
               autofocus: true,
-              decoration: InputDecoration(labelText: "Posisi"),
+              decoration: InputDecoration(labelText: "Posisi Pekerjaan"),
               textInputAction: TextInputAction.next,
               controller: positionController,
             ),
@@ -56,7 +56,7 @@ class AddPlayer extends StatelessWidget {
               autocorrect: false,
               autofocus: true,
               decoration: InputDecoration(
-                labelText: "Image URL",
+                labelText: "Masukan URL Gambar",
               ),
               textInputAction: TextInputAction.done,
               controller: imageController,
