@@ -10,7 +10,7 @@ class Players with ChangeNotifier {
   final List<Player> _allPlayer = [];
 
   List<Player> get allPlayer => _allPlayer;
-  // !Menghitung banyaknya data
+  // TODO Menghitung Banyaknya data
   int get jumlahPlayer => _allPlayer.length;
 
   Player selectById(String id) =>
@@ -63,6 +63,7 @@ class Players with ChangeNotifier {
         "https://http-request-883ec-default-rtdb.firebaseio.com/players/$id.json");
     
     // Todo Patch hanya meninpa data sebelumnya tanpa menghapus data yang ada sebelumnya.
+    // !---------------------------!
     // Todo Put menghapus/mengantikan data sebelumnya
     return http
         .patch(url,
